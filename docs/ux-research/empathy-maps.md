@@ -1,8 +1,8 @@
-# Empathy Maps — Accessibility Fixer
+# Empathy Maps — Access4U
 
 > Generated using Dave Gray's 4-quadrant model (Says, Thinks, Does, Feels) via ux-research-mcp
 
-**Context for all maps:** Using Accessibility Fixer to audit a web page
+**Context for all maps:** Using Access4U to audit a web page
 
 ---
 

@@ -1,8 +1,8 @@
-# Accessibility Audit — Accessibility Fixer UI
+# Accessibility Audit — Access4U UI
 
 > Generated using WCAG 2.2 audit framework with inclusive design principles via ux-research-mcp
 
-**UI Analyzed:** Accessibility Fixer is a web application with a dark-themed code editor panel, a split-view showing original and fixed HTML side by side, a violation list with color-coded severity badges (red/orange/yellow), a collapsible explanation panel with AI-generated plain-language descriptions, copy-to-clipboard buttons, a heatmap overlay showing violation density, and PDF/JSON export buttons. The interface uses small monospace fonts in code areas and icon-only buttons for some actions.
+**UI Analyzed:** Access4U is a web application with a dark-themed code editor panel, a split-view showing original and fixed HTML side by side, a violation list with color-coded severity badges (red/orange/yellow), a collapsible explanation panel with AI-generated plain-language descriptions, copy-to-clipboard buttons, a heatmap overlay showing violation density, and PDF/JSON export buttons. The interface uses small monospace fonts in code areas and icon-only buttons for some actions.
 
 **Target User Groups:** Screen reader users, keyboard-only users, users with low vision, users with cognitive disabilities
 

@@ -1,5 +1,5 @@
 export const accessibilityPrd = {
-  name: "WCAG Accessibility Fixer",
+  name: "WCAG Access4U",
   constraints: [
     "All analysis must target WCAG 2.2 Level AA compliance",
     "Fixes must be minimal — change only what is needed to resolve each violation",

@@ -1,4 +1,4 @@
-# Accessibility Fixer
+# Access4U
 
 ## Overview
 Stateless web app that scans HTML for WCAG accessibility violations using axe-core (client-side), then uses Gemini AI to explain violations in plain language and generate corrected code with before/after diffs.

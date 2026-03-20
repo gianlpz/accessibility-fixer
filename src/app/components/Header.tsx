@@ -20,7 +20,7 @@ export default function Header() {
             <path d="M12 16v-4" />
             <path d="M12 8h.01" />
           </svg>
-          <span>Accessibility Fixer</span>
+          <span>Access4U</span>
         </Link>
         <nav>
           <Link

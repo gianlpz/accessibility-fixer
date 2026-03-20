@@ -1,4 +1,4 @@
-# Personas — Accessibility Fixer
+# Personas — Access4U
 
 > Generated using Cooper's goal-directed design framework via ux-research-mcp
 
@@ -50,7 +50,7 @@ Jordan is a 28-year-old frontend developer based in Austin, TX. He works on a mi
 
 ### Usage Scenario
 
-Jordan is mid-sprint and a QA engineer flags three accessibility violations on the checkout page. He opens Accessibility Fixer, pastes the page HTML, and runs an audit. The tool finds 12 violations. He sorts by severity, clicks the first critical issue (missing form labels), reads the plain-language explanation, reviews the before/after diff, and copies the fix. He applies it in VS Code, re-audits, and the violation is gone. Total time: 4 minutes per violation instead of 20.
+Jordan is mid-sprint and a QA engineer flags three accessibility violations on the checkout page. He opens Access4U, pastes the page HTML, and runs an audit. The tool finds 12 violations. He sorts by severity, clicks the first critical issue (missing form labels), reads the plain-language explanation, reviews the before/after diff, and copies the fix. He applies it in VS Code, re-audits, and the violation is gone. Total time: 4 minutes per violation instead of 20.
 
 ---
 
@@ -99,7 +99,7 @@ Sarah is a 27-year-old UX designer based in Seattle. She creates wireframes, vis
 
 ### Usage Scenario
 
-Sarah finishes a redesign of the product's landing page. Before handing off the Figma file, she exports the HTML prototype and drops it into Accessibility Fixer. The tool flags 5 issues: two color contrast failures, a missing heading hierarchy, and two images without alt text. Each issue has a plain-language explanation and a suggested fix. She adjusts the contrast in Figma, adds alt text notes to her handoff doc, and shares the audit report with the dev team so nothing falls through the cracks.
+Sarah finishes a redesign of the product's landing page. Before handing off the Figma file, she exports the HTML prototype and drops it into Access4U. The tool flags 5 issues: two color contrast failures, a missing heading hierarchy, and two images without alt text. Each issue has a plain-language explanation and a suggested fix. She adjusts the contrast in Figma, adds alt text notes to her handoff doc, and shares the audit report with the dev team so nothing falls through the cracks.
 
 ---
 
@@ -148,4 +148,4 @@ Elena is a 25-year-old QA engineer based in San Francisco. She owns accessibilit
 
 ### Usage Scenario
 
-Elena runs a quarterly accessibility audit on the company's customer portal. She pastes the URL into Accessibility Fixer and runs a full scan. The tool returns 23 violations across 4 WCAG conformance levels. She filters by Level A critical issues, reviews the heatmap to see where violations cluster, then exports a PDF report with violation details, WCAG references, and severity ratings mapped to her team's risk framework. She shares the report with legal and creates Jira tickets for the dev team, ordered by priority score.
+Elena runs a quarterly accessibility audit on the company's customer portal. She pastes the URL into Access4U and runs a full scan. The tool returns 23 violations across 4 WCAG conformance levels. She filters by Level A critical issues, reviews the heatmap to see where violations cluster, then exports a PDF report with violation details, WCAG references, and severity ratings mapped to her team's risk framework. She shares the report with legal and creates Jira tickets for the dev team, ordered by priority score.

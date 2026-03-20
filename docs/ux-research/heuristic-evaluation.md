@@ -1,8 +1,8 @@
-# Heuristic Evaluation — Accessibility Fixer UI
+# Heuristic Evaluation — Access4U UI
 
 > Generated using Nielsen's 10 Usability Heuristics framework via ux-research-mcp
 
-**UI Analyzed:** Accessibility Fixer is a web application with a dark-themed split-view interface. Left panel contains an HTML source input with a Run Audit button. Right panel shows a violation list with severity badges, an expandable AI explanation panel, and a before/after code diff viewer. Top navigation has icon-only buttons for settings, export, and help. The violation heatmap overlay highlights issue locations on a page preview. Error states show red banners with technical error messages. There is no undo for applied fixes. No breadcrumbs or indication of audit history. Filter and sort controls use dropdown menus without default selections.
+**UI Analyzed:** Access4U is a web application with a dark-themed split-view interface. Left panel contains an HTML source input with a Run Audit button. Right panel shows a violation list with severity badges, an expandable AI explanation panel, and a before/after code diff viewer. Top navigation has icon-only buttons for settings, export, and help. The violation heatmap overlay highlights issue locations on a page preview. Error states show red banners with technical error messages. There is no undo for applied fixes. No breadcrumbs or indication of audit history. Filter and sort controls use dropdown menus without default selections.
 
 **Context:** Developer tool for web accessibility auditing and remediation, used by frontend developers, designers, and QA engineers
 

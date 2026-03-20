@@ -1,4 +1,4 @@
-# HTML Test Snippets for Accessibility Fixer
+# HTML Test Snippets for Access4U
 
 Copy and paste any of these into the audit tool. Each one contains intentional WCAG violations.
 

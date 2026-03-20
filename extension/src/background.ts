@@ -1,4 +1,4 @@
-// Background service worker for the Accessibility Fixer extension
+// Background service worker for the Access4U extension
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({

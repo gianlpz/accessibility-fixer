@@ -1,4 +1,4 @@
-# Pain Point Analysis: Accessibility Fixer
+# Pain Point Analysis: Access4U
 
 > Generated using severity x frequency prioritization matrix via ux-research-mcp
 >
@@ -105,4 +105,4 @@
 
 ## Top Recommendation
 
-Focus on "Tool severity ratings do not map to actual business priority or legal risk" — it is the highest-priority issue (score: 9/16) in the usability category. This pain point affects all three personas: developers prioritize wrong violations, designers cannot gauge impact, and QA engineers must manually remap severity for every report. Solving this with a customizable risk framework differentiates Accessibility Fixer from every existing tool.
+Focus on "Tool severity ratings do not map to actual business priority or legal risk" — it is the highest-priority issue (score: 9/16) in the usability category. This pain point affects all three personas: developers prioritize wrong violations, designers cannot gauge impact, and QA engineers must manually remap severity for every report. Solving this with a customizable risk framework differentiates Access4U from every existing tool.

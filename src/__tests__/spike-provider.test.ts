@@ -68,7 +68,7 @@ describe("SpikeProvider", () => {
     const body = JSON.parse(options.body);
     expect(body.model).toBe("smart");
     expect(body.prd_filter).toBeDefined();
-    expect(body.prd_filter.name).toBe("WCAG Accessibility Fixer");
+    expect(body.prd_filter.name).toBe("WCAG Access4U");
     expect(body.prd_filter.constraints).toHaveLength(6);
   });
 

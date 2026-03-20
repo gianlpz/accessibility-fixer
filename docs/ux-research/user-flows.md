@@ -1,4 +1,4 @@
-# User Flows — Accessibility Fixer
+# User Flows — Access4U
 
 > Generated using user journey mapping with emotional states, pain points, and opportunities via ux-research-mcp
 
@@ -7,7 +7,7 @@
 ## Flow 1: Developer Fixing Violations
 
 **User Goal:** Fix accessibility violations in a web page
-**Starting Point:** Accessibility Fixer dashboard
+**Starting Point:** Access4U dashboard
 
 ### Happy Path
 
@@ -82,7 +82,7 @@
 ## Flow 2: QA Engineer Exporting Compliance Report
 
 **User Goal:** Export accessibility audit report for compliance documentation
-**Starting Point:** Accessibility Fixer dashboard
+**Starting Point:** Access4U dashboard
 
 ### Happy Path
 

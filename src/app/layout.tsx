@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Accessibility Fixer — Scan, Understand & Fix WCAG Violations",
+  title: "Access4U — Scan, Understand & Fix WCAG Violations",
   description:
     "Paste HTML, find accessibility violations, get AI-generated explanations and corrected code with before/after diffs.",
 };

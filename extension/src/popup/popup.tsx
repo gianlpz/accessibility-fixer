@@ -60,7 +60,7 @@ function Popup() {
       >
         <span style={{ fontSize: "20px" }}>♿</span>
         <h1 style={{ fontSize: "16px", fontWeight: 700, color: "#1e293b" }}>
-          Accessibility Fixer
+          Access4U
         </h1>
       </div>
 
