@@ -1,0 +1,23 @@
+{
+  "name": "accessibility-fixer-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && cp ../public/axe.min.js axe.min.js",
+    "dev": "vite build --watch"
+  },
+  "dependencies": {
+    "axe-core": "^4.11.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5",
+    "vite": "^6.0.0"
+  }
+}

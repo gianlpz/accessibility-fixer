@@ -6,6 +6,8 @@ interface ReportData {
   analyses: ViolationAnalysis[];
   timestamp: string;
   passes: number;
+  scannedUrl?: string;
+  contrastSummary?: { total: number; failing: number };
 }
 
 export function exportJSON(data: ReportData): void {
@@ -33,7 +35,12 @@ export function exportPDF(data: ReportData): void {
   doc.text(`Generated: ${new Date(data.timestamp).toLocaleString()}`, margin, y);
   y += 6;
   doc.text(`Violations: ${data.violations.length} | Passes: ${data.passes}`, margin, y);
-  y += 12;
+  y += 6;
+  if (data.scannedUrl) {
+    doc.text(`Scanned URL: ${data.scannedUrl}`, margin, y);
+    y += 6;
+  }
+  y += 6;
 
   // Severity Summary
   doc.setFontSize(14);
@@ -55,6 +62,22 @@ export function exportPDF(data: ReportData): void {
     }
   }
   y += 8;
+
+  // Contrast Summary
+  if (data.contrastSummary) {
+    doc.setFontSize(14);
+    doc.setFont("helvetica", "bold");
+    doc.text("Colour Contrast", margin, y);
+    y += 8;
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.text(
+      `${data.contrastSummary.total} colour pairs analyzed, ${data.contrastSummary.failing} failing WCAG AA`,
+      margin + 4,
+      y
+    );
+    y += 10;
+  }
 
   // Violations
   doc.setFontSize(14);

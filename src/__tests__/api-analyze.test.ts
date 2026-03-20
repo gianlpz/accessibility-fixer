@@ -21,6 +21,21 @@ vi.mock("ai", () => ({
   })),
 }));
 
+// Mock the spike provider to avoid needing an API key
+vi.mock("../app/lib/spike-provider", () => ({
+  SpikeProvider: vi.fn().mockImplementation(() => ({
+    analyzeViolations: vi.fn(async () => [
+      {
+        violationId: "image-alt",
+        explanation: "Images need alt text (from spike).",
+        fixedHtml: '<img src="test.jpg" alt="Description">',
+        originalHtml: '<img src="test.jpg">',
+        wcagCriteria: ["1.1.1"],
+      },
+    ]),
+  })),
+}));
+
 describe("API /api/analyze", () => {
   beforeEach(() => {
     vi.clearAllMocks();
@@ -107,5 +122,41 @@ describe("API /api/analyze", () => {
 
     // 12 violations / 5 per batch = 3 batches
     expect(generateObject).toHaveBeenCalledTimes(3);
+  });
+
+  it("uses spike provider when provider=spike is passed", async () => {
+    const { POST } = await import("../app/api/analyze/route");
+
+    const request = new Request("http://localhost/api/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        violations: [
+          {
+            id: "image-alt",
+            impact: "critical",
+            description: "Images must have alt text",
+            help: "Images must have alt text",
+            helpUrl: "https://example.com",
+            tags: ["wcag2a"],
+            nodes: [
+              {
+                html: '<img src="test.jpg">',
+                target: ["img"],
+                failureSummary: "No alt",
+              },
+            ],
+          },
+        ],
+        htmlContext: '<img src="test.jpg">',
+        provider: "spike",
+      }),
+    });
+
+    const response = await POST(request);
+    const data = await response.json();
+
+    expect(data.analyses).toHaveLength(1);
+    expect(data.analyses[0].explanation).toContain("from spike");
   });
 });

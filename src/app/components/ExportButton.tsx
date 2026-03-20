@@ -8,6 +8,7 @@ interface ExportButtonProps {
   analyses: ViolationAnalysis[];
   passes: number;
   timestamp: string;
+  scannedUrl?: string;
 }
 
 export default function ExportButton({
@@ -15,8 +16,9 @@ export default function ExportButton({
   analyses,
   passes,
   timestamp,
+  scannedUrl,
 }: ExportButtonProps) {
-  const data = { violations, analyses, timestamp, passes };
+  const data = { violations, analyses, timestamp, passes, scannedUrl };
 
   return (
     <div className="flex gap-2">
