@@ -50,7 +50,7 @@ Jordan is a 28-year-old frontend developer based in Austin, TX. He works on a mi
 
 ### Usage Scenario
 
-Jordan is mid-sprint and a QA engineer flags three accessibility violations on the checkout page. He opens Access4U, pastes the page HTML, and runs an audit. The tool finds 12 violations. He sorts by severity, clicks the first critical issue (missing form labels), reads the plain-language explanation, reviews the before/after diff, and copies the fix. He applies it in VS Code, re-audits, and the violation is gone. Total time: 4 minutes per violation instead of 20.
+Jordan is mid-sprint and a QA engineer flags three accessibility violations on the checkout page. He opens Access4U, pastes the page HTML, and runs an audit. The tool finds 12 violations. He scans the violation list, clicks the first critical issue (missing form labels), reads the plain-language explanation, reviews the before/after diff, and copies the fix. He applies it in VS Code, re-audits, and the violation is gone. Total time: 4 minutes per violation instead of 20.
 
 ---
 
@@ -148,4 +148,4 @@ Elena is a 25-year-old QA engineer based in San Francisco. She owns accessibilit
 
 ### Usage Scenario
 
-Elena runs a quarterly accessibility audit on the company's customer portal. She pastes the URL into Access4U and runs a full scan. The tool returns 23 violations across 4 WCAG conformance levels. She filters by Level A critical issues, reviews the heatmap to see where violations cluster, then exports a PDF report with violation details, WCAG references, and severity ratings mapped to her team's risk framework. She shares the report with legal and creates Jira tickets for the dev team, ordered by priority score.
+Elena runs a quarterly accessibility audit on the company's customer portal. She pastes the URL into Access4U and runs a full scan. The tool returns 23 violations across 4 WCAG conformance levels. She reviews the violation list prioritising critical issues, checks the heatmap to see where violations cluster, then exports a PDF report with violation details, WCAG references, and severity ratings for her team's risk framework. She shares the report with legal and creates Jira tickets for the dev team, ordered by priority score.

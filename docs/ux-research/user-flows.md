@@ -7,7 +7,7 @@
 ## Flow 1: Developer Fixing Violations
 
 **User Goal:** Fix accessibility violations in a web page
-**Starting Point:** Access4U dashboard
+**Starting Point:** Access4U audit page
 
 ### Happy Path
 
@@ -82,7 +82,7 @@
 ## Flow 2: QA Engineer Exporting Compliance Report
 
 **User Goal:** Export accessibility audit report for compliance documentation
-**Starting Point:** Access4U dashboard
+**Starting Point:** Access4U audit page
 
 ### Happy Path
 

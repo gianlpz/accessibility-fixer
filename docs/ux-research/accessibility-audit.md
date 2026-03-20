@@ -2,7 +2,7 @@
 
 > Generated using WCAG 2.2 audit framework with inclusive design principles via ux-research-mcp
 
-**UI Analyzed:** Access4U is a web application with a dark-themed code editor panel, a split-view showing original and fixed HTML side by side, a violation list with color-coded severity badges (red/orange/yellow), a collapsible explanation panel with AI-generated plain-language descriptions, copy-to-clipboard buttons, a heatmap overlay showing violation density, and PDF/JSON export buttons. The interface uses small monospace fonts in code areas and icon-only buttons for some actions.
+**UI Analyzed:** Access4U is a web application with a light-themed interface, a split-view showing original and fixed HTML side by side (before/after preview), a violation list with color-coded severity badges (red/orange/yellow), expandable explanation cards with AI-generated plain-language descriptions, copy-to-clipboard buttons, a heatmap overlay showing violation density, and PDF/JSON export buttons. The interface uses monospace fonts in code diff areas. Navigation consists of a logo and a "Start Audit" text button.
 
 **Target User Groups:** Screen reader users, keyboard-only users, users with low vision, users with cognitive disabilities
 
@@ -45,7 +45,7 @@ Significant accessibility gaps detected. Found 1 critical and 5 major issues. A 
 - **WCAG Criterion:** 1.4.3 Contrast (Minimum) (Level AA)
 - **Disability Type:** Visual
 - **Severity:** Major
-- **Recommendation:** Dark-themed code editors often fail contrast requirements. Ensure text contrast ratio is at least 4.5:1 for normal text and 3:1 for large text. Test all color combinations in the dark theme — particularly code syntax highlighting colors, placeholder text, and disabled state text.
+- **Recommendation:** Ensure text contrast ratio is at least 4.5:1 for normal text and 3:1 for large text. Test all color combinations — particularly code diff viewer syntax highlighting colors, placeholder text, and disabled state text.
 
 ### 4. Interactive elements may be too small for comfortable touch/click
 
@@ -126,9 +126,9 @@ Use plain language in AI-generated explanations. Avoid WCAG jargon in the primar
 
 *Benefits:* Users with cognitive disabilities, non-native English speakers, all users
 
-### Dark Mode
+### Theme Options
 
-Offer both light and dark mode options. The current dark-only theme excludes users who find light text on dark backgrounds harder to read (e.g., some users with dyslexia or astigmatism).
+Offer both light and dark mode options. Some users find light text on dark backgrounds harder to read (e.g., some users with dyslexia or astigmatism), while others prefer dark mode to reduce eye strain. Providing a toggle accommodates both preferences.
 
 *Benefits:* Users with light sensitivity, users with low vision, users with dyslexia, all users
 
@@ -140,6 +140,6 @@ Make all actions reversible. The "apply fix" action should have a clear undo opt
 
 ### Keyboard Navigation
 
-Ensure the entire audit-explain-fix flow is navigable via keyboard alone. Implement skip links to jump between the input panel, violation list, explanation panel, and diff viewer. Use visible focus indicators that work on the dark theme.
+Ensure the entire audit-explain-fix flow is navigable via keyboard alone. Implement skip links to jump between the input panel, violation list, explanation panel, and diff viewer. Use visible focus indicators that are clearly visible on the light theme.
 
 *Benefits:* Keyboard-only users, screen reader users, users with motor impairments

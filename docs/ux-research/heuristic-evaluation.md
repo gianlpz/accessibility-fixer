@@ -2,7 +2,7 @@
 
 > Generated using Nielsen's 10 Usability Heuristics framework via ux-research-mcp
 
-**UI Analyzed:** Access4U is a web application with a dark-themed split-view interface. Left panel contains an HTML source input with a Run Audit button. Right panel shows a violation list with severity badges, an expandable AI explanation panel, and a before/after code diff viewer. Top navigation has icon-only buttons for settings, export, and help. The violation heatmap overlay highlights issue locations on a page preview. Error states show red banners with technical error messages. There is no undo for applied fixes. No breadcrumbs or indication of audit history. Filter and sort controls use dropdown menus without default selections.
+**UI Analyzed:** Access4U is a web application with a light-themed split-view interface. Left panel contains an HTML source input (or URL input via tabs) with a Run Audit button and an AI provider selector (defaulting to Gemini). Right panel shows a violation list with severity badges, expandable AI explanation cards, and tabbed views for violations, preview, diff, and contrast matrix. Top navigation has a logo linking home and a "Start Audit" text button. The violation heatmap overlay highlights issue density on a page preview. Error states show red banners. There is no undo for applied fixes. No breadcrumbs or indication of audit history.
 
 **Context:** Developer tool for web accessibility auditing and remediation, used by frontend developers, designers, and QA engineers
 

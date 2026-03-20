@@ -11,7 +11,7 @@ export default function ImportPage() {
     function handleMessage(event: MessageEvent) {
       if (
         event.data &&
-        event.data.type === "A11Y_FIXER_IMPORT" &&
+        event.data.type === "A11Y_ACCESS4U_IMPORT" &&
         event.data.violations
       ) {
         // Store in sessionStorage for the audit page to pick up
